@@ -1,4 +1,4 @@
-# King's County Housing Project
+# King County Housing Project
 
 ### Authors: [Wonuola Abimbola](https://github.com/Wonuabimbola), [Kibae Kim](https://github.com/jayce7376)
 
@@ -16,10 +16,10 @@ We have been provided with a large dataset containing information about houses s
 ## Exploratory Data analysis
 
 Using the "Geopandas" package and matplotlib, we plotted a map showing the houses in King County Area.
-![Dataset kingcountymap](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/kingcountyMap.png)
+![Dataset kingcountymap](https://github.com/Wonuabimbola/phase_2_project/blob/master/images/kingcountyMap.png)
 
 We also created some visualization showing some of the variables and their relationships with the house prices in our dataset.
-![Dataset Regplots](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/regression_plots.png)
+![Dataset Regplots](https://github.com/Wonuabimbola/phase_2_project/blob/master/images/regression_plots.png)
 
 The plots above show that some of the variables like sqft_living, number of bathrooms, number of bedrooms and grade have a clear positive relationship with price. We also saw that there is a high chance that the price of a house with a waterfront is higher than the price of a house without a waterfront.
 
@@ -30,7 +30,7 @@ Also, during the exploration, we discovered quite a few things:
 * 98.42% of the houses have between 1 and 4 bathrooms
 
 #### We then decided to visualize a barplot showing these findings
-![findings visualization](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/data_cleaning.png)
+![findings visualization](https://github.com/Wonuabimbola/phase_2_project/blob/master/images/data_cleaning.png)
 
 ## Data Cleaning
 
@@ -50,14 +50,14 @@ We created dummy variables by categorizing
 We found we did not need to create dummy columns for waterfront as it was already in that format.
 
 We then plotted the different categories above against their average prices as shown below.
-![Dummy variables of cities,waterfront,and renovation against their average prices](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/Price&dummy_variables.png)
+![Dummy variables of cities,waterfront,and renovation against their average prices](https://github.com/Wonuabimbola/phase_2_project/blob/master/images/Price&dummy_variables.png)
 
 ## Model Testing
 
 After testing several models with different variables and squared variables, we removed some multicollinearity and found the model with the best R-squared score (0.695). 
 
 Using the coefficient of the predictors from our linear regression model, we predicted the house prices. This figure below shows the comparison between the prices we predicted and the actual prices of the houses in order for us to see how close our predictions are.
-![predicted versus actual house prices](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/Real_predicted_price.png)
+![predicted versus actual house prices](https://github.com/Wonuabimbola/phase_2_project/blob/master/images/Real_predicted_price.png)
 
 ## Conclusion
 
