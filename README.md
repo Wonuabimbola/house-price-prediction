@@ -27,3 +27,51 @@ Also, during the exploration, we discovered quite a few things:
 * 98.42% of the houses have between 1 and 4 bathrooms
 
 #### We then decided to visualize a barplot showing these findings
+![findings visualization](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/data_cleaning.png)
+
+## Data Cleaning
+
+We cleaned the data up a bit by dropping the duplicated house entries. We also dropped the rows that had NAN values as well.
+
+
+## Feature Engineering
+
+### Cities
+
+We used city names instead of the zipcodes because we thought the city names would also be able to explain the price differences between the areas. We were able to get the city names that correspond to the zipcodes in the data by using [this website](https://www.zipcodestogo.com/Washington/) and we added it as a new column to our existing dataframe.
+
+We created dummy variables by categorizing
+* the cities into high, low priced cities using the average price per city. 
+* the houses into those that were sold less than 20 years after they were renovated, those that were sold more than 20 years after they were sold and those that were not renovated.
+
+We found we did not need to create dummy columns for waterfront as it was already in that format.
+
+We then plotted the different categories above against their average prices as shown below.
+![Dummy variables of cities,waterfront,and renovation against their average prices](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/Price&dummy_variables.png)
+
+## Model Testing
+
+After testing several models with different variables and squared variables, we removed some multicollinearity and found the model with the best R-squared score (0.695). 
+
+Using the coefficient of the predictors from our linear regression model, we predicted the house prices. This figure below shows the comparison between the prices we predicted and the actual prices of the houses in order for us to see how close our predictions are.
+![predicted versus actual house prices](https://github.com/Wonuabimbola/phase_2_project/blob/beta/images/Real_predicted_price.png)
+
+## Conclusion
+
+We were able to achieve a test RMSE of approximately 189,719 which we know is quite high. However, our R-squared score of 0.695 is pretty good as it explains 69.5% of the variance in the house price that is predictable from our independent variables.
+
+* Cities
+  
+  * The house prices in higher priced cities are $128k higher while the house prices in lower priced cities are $185k lower than middle priced cities’.
+
+* Renovation
+  
+  * The houses with less than 20 years between date sold and date renovated are $82k higher than houses that were not renovated.
+
+* Waterfront
+  
+  * The prices of waterfront houses are $650k higher than other houses.
+
+## Next Steps
+
+We also think that there may be other external factors like quality of schools, crime rate, proximity to transport or malls; that may also affect the pricing of houses. So, obtaining data on these factors in relation to the location of the houses would greatly help our model in being more accurate.
