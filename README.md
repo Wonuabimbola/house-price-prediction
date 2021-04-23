@@ -1,4 +1,4 @@
-# King's County Housing Project
+# King County Housing Project
 
 ### Authors: [Wonuola Abimbola](https://github.com/Wonuabimbola), [Kibae Kim](https://github.com/jayce7376)
 
