@@ -1,5 +1,8 @@
 # King's County Housing Project
 
+### Authors: [Wonuola Abimbola](https://github.com/Wonuabimbola), [Kibae Kim](https://github.com/jayce7376)
+
+
 ## Overview
 
 We have been provided with a large dataset containing information about houses sold in the DC area between 2014 and 2015. We will be using regression modeling to analyze and predict house sales price in the King County area.
@@ -75,3 +78,17 @@ We were able to achieve a test RMSE of approximately 189,719 which we know is qu
 ## Next Steps
 
 We also think that there may be other external factors like quality of schools, crime rate, proximity to transport or malls; that may also affect the pricing of houses. So, obtaining data on these factors in relation to the location of the houses would greatly help our model in being more accurate.
+
+# Navigation
+
+
+```
+├── README.md                              <- This README file
+├── data
+│   ├── mapping                            <- contains files for mapping with geopandas
+│   ├── column_names.md                    <- description of columns
+│   ├── kc_house_data.csv                  <- data provided by flatiron school
+├── gitignore                              <- files to ignore
+├── King_County_Project.ipynb              <- final notebook
+├── king_county_housing_presentation.pdf   <- presentation
+└── images                                 <- Visualizations used in README and pdf file
