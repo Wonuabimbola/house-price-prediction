@@ -92,3 +92,11 @@ We also think that there may be other external factors like quality of schools, 
 ├── King_County_Project.ipynb              <- final notebook
 ├── king_county_housing_presentation.pdf   <- presentation
 └── images                                 <- Visualizations used in README and pdf file
+
+```
+
+## Contact Information
+
+With questions or feedback on this repository, please reach out via:
+- [GitHub](https://github.com/Wonuabimbola)
+- [LinkedIn](https://www.linkedin.com/in/wonuola-abimbola)
