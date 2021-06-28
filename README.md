@@ -3,15 +3,24 @@
 ### Authors: [Wonuola Abimbola](https://github.com/Wonuabimbola), [Kibae Kim](https://github.com/jayce7376)
 
 
-## Overview
+## Project Goal
 
-We have been provided with a large dataset containing information about houses sold in the DC area between 2014 and 2015. We will be using regression modeling to analyze and predict house sales price in the King County area.
+Our project aims to predict the sale price of houses. This could ideally help a real estate agency to have a good understanding of the value of a home, given its attributes. In addition, the agency could use this understanding to strategically make enhancements to specific attributes that would have the greatest ROI at the time of sale. We will be using regression modeling to analyze and predict house sales price in the King County area.
 
 ### Questions we would like to answer
 
 * Do the prices of the houses sold differ depending on the city they're located in?
 * Does renovation have an effect on house price?
 * Do waterfront houses have higher prices than other houses?
+
+## Data Understanding
+
+The dataset used in this project is from [Kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction) and it contains the details of about 21.5k homes sold in the King County Area between 2014 and 2015.
+The data contains 21 columns which includes variables about:
+* number of bedrooms and bathrooms
+* total size of house and lot
+* year built and year renovated
+* number of floors, etc.
 
 ## Exploratory Data analysis
 
@@ -83,16 +92,15 @@ We also think that there may be other external factors like quality of schools, 
 
 
 ```
-├── README.md                              <- This README file
 ├── data
 │   ├── mapping                            <- contains files for mapping with geopandas
 │   ├── column_names.md                    <- description of columns
-│   ├── kc_house_data.csv                  <- data provided by flatiron school
+│   ├── kc_house_data.csv                  <- data obtained kaggle website
+├── images                                 <- Visualizations used in README and pdf file
 ├── gitignore                              <- files to ignore
 ├── King_County_Project.ipynb              <- final notebook
-├── king_county_housing_presentation.pdf   <- presentation
-└── images                                 <- Visualizations used in README and pdf file
-
+├── README.md                              <- This README file
+└── king_county_housing_presentation.pdf   <- final presentation
 ```
 
 ## Contact Information
